@@ -43,12 +43,12 @@ public class TestBase {
 		String urlAddress = prop.getProperty("url");
 
 		if (browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "D:\\soft\\New folder\\UIAutomationAssg-master\\UIAutomationAsgnmt2\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",  System.getProperty("user.dir") + "/chromedriver.exe");
 
 			driver = new ChromeDriver();
 
 		} else if (browserName.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "D:\\soft\\New folder\\UIAutomationAssg-master\\UIAutomationAsgnmt2\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 

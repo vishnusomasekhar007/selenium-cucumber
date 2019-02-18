@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: hellocucumber.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 16.243 sec <<< FAILURE!
+User Registration and Adds item to Cart(User Registration and Add item to Cart with validations using Chrome browser)  Time elapsed: 15.911 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.uiautomation.util.ExcelUtils.getLastRowCount(ExcelUtils.java:99)
+	at com.uiautomation.pageObjects.SignInPage.enterEmailID(SignInPage.java:47)
+	at hellocucumber.SignInPageStepDef.registerEmailID(SignInPageStepDef.java:15)
+	at ?.User registers with valid emailID post validation for incorrect emailID(hellocucumber/chromeUIAutomation.feature:9)
+
